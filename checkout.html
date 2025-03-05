@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="checkout.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Checkout</h1>
+        <a href="index.html">Back to Shop</a>
+    </header>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="total-price">$0.00</span></p>
+        <button id="pay">Proceed to Payment</button>
+    </section>
+
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Enter Payment Details</h2>
+            <input type="text" id="card-number" placeholder="Card Number">
+            <input type="text" id="expiry" placeholder="Expiry Date">
+            <input type="text" id="cvv" placeholder="CVV">
+            <button id="confirm-payment">Pay Now</button>
+        </div>
+    </div>
+
+</body>
+</html>

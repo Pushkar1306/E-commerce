@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="checkout.html">Cart 🛒 <span id="cart-count">0</span></a></li>
+                <li><button id="darkModeToggle">🌙</button></li>
+            </ul>
+        </nav>
+        <div class="search-filter">
+            <input type="text" id="search" placeholder="Search product...">
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+            </select>
+        </div>
+    </header>
+
+    <section id="shop">
+        <h2>Shop</h2>
+        <div class="product-list">
+            <div class="product-card" data-category="electronics">
+                <img src="images/laptop.jpg" alt="Laptop">
+                <p>Laptop</p>
+                <p>$899.99</p>
+                <button class="wishlist">♡</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-category="clothing">
+                <img src="images/shirt.jpg" alt="Shirt">
+                <p>T-Shirt</p>
+                <p>$19.99</p>
+                <button class="wishlist">♡</button>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+
